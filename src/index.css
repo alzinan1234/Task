@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.maxWidth {
+  max-width: 1300px !important;
+  margin: 0 auto;
+  padding: 0 20px !important;
+}
