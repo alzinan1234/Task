@@ -6,15 +6,9 @@ import React, { useState } from "react";
 
 const Navbar = () => {
   const [query, setQuery] = useState("");
-  const [category, setCategory] = useState("All Categories");
+  const [category, setCategory] = useState("全てのカテゴリ");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const categories = [
-    "All Categories",
-    "Electronics",
-    "Books",
-    "Clothing",
-    "Accessories",
-  ];
+  const categories = ["全てのカテゴリ", "全てのカテゴリ", "Books"];
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -23,11 +17,11 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="maxWidth mx-auto flex justify-between items-center">
-        <div className="flex gap-8">
+      <div className="maxWidth mx-auto flex justify-between items-center mt-2">
+        <div className="flex gap-8 items-center justify-center">
           <div>
-            <div className="flex items-center border border-gray-400 rounded-md overflow-hidden">
-              <form onSubmit={handleSearch} className="flex w-full">
+            <div className="flex items-center justify-center border border-gray-400 rounded-md overflow-hidden w-[600px] h-[38px]">
+              <form onSubmit={handleSearch} className="flex w-full h-full">
                 {/* Search input */}
                 <input
                   type="text"
@@ -83,26 +77,54 @@ const Navbar = () => {
                 </button>
               </form>
             </div>
+            <div className="flex items-center gap-4 ">
+              <div>
+                <p>保存した検索条件</p>
+              </div>
+              <div className="flex gap-2 text-[#46AEF7]">
+                <p>Text</p>
+                <p>Text</p>
+                <p>Text</p>
+                <p>Text</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <p>条件指定+</p>
+          <div className="flex items-center justify-center  -mt-5">
+            <p className="text-center">条件指定+</p>
           </div>
         </div>
+
         <div className=" flex items-center justify-center gap-5 border">
-          <div className="border flex justify-center items-center flex-col">
-            <img src={image1} alt="人物の無料素材" />
+          <div className="border flex justify-center items-center flex-col ">
+            <img
+              className="w-[28px] h-[28px]"
+              src={image1}
+              alt="人物の無料素材"
+            />
             <p>人物の無料素材</p>
           </div>
-          <div>
-            <img src={image2} alt="人物の無料素材" />
+          <div className="flex justify-center items-center flex-col">
+            <img
+              className="w-[28px] h-[28px]"
+              src={image2}
+              alt="人物の無料素材"
+            />
             <p>人物の無料素材</p>
           </div>
-          <div>
-            <img src={image3} alt="人物の無料素材" />
+          <div className="flex justify-center items-center flex-col">
+            <img
+              className="w-[28px] h-[28px]"
+              src={image3}
+              alt="人物の無料素材"
+            />
             <p>人物の無料素材</p>
           </div>
-          <div>
-            <img src={image4} alt="人物の無料素材" />
+          <div className="flex justify-center items-center flex-col">
+            <img
+              className="w-[28px] h-[28px]"
+              src={image4}
+              alt="人物の無料素材"
+            />
             <p>人物の無料素材</p>
           </div>
         </div>
