@@ -15,3 +15,7 @@
 .b {
   border: 1px solid #46aef7;
 }
+
+.border-left {
+  border-left: 6px solid #46aef7;
+}
