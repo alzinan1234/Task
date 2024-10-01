@@ -25,6 +25,12 @@ const OtherSection = () => {
             </div>
           </div>
         </div>
+        <div className="mt-6 border-top"></div>
+        <div className="flex gap-8 text-center items-center mt-5 mx-32 ">
+          <p className="">ユーザーネーム</p>
+          <p className="">ユーザーネーム</p>
+        </div>
+        <div className="mt-6 border-top"></div>
       </div>
     </>
   );

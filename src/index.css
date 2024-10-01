@@ -19,3 +19,7 @@
 .border-left {
   border-left: 6px solid #46aef7;
 }
+
+.border-top {
+  border-top: 1px solid #757575;
+}
