@@ -61,7 +61,7 @@ const Card = () => {
               <div className="flex gap-2 ">
                 <img
                   className="w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] "
-                  src={image1}
+                  src={image3}
                   alt="user profile"
                 />
                 <p className="text-xs sm:text-sm">
@@ -102,7 +102,7 @@ const Card = () => {
               <div className="flex gap-2 ">
                 <img
                   className="w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] "
-                  src={image1}
+                  src={image2}
                   alt="user profile"
                 />
                 <p className="text-xs sm:text-sm">
